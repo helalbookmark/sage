@@ -7,7 +7,7 @@
     <?php the_content(); ?>
   </div>
   <footer>
-    <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
+    <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'theme'), 'after' => '</p></nav>']); ?>
   </footer>
   <?php comments_template('/templates/partials/comments.php'); ?>
 </article>

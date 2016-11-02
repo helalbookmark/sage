@@ -37,7 +37,7 @@ add_action('after_setup_theme', function () {
      * @link http://codex.wordpress.org/Function_Reference/register_nav_menus
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'theme')
     ]);
 
     /**
@@ -78,11 +78,11 @@ add_action('widgets_init', function () {
         'after_title'   => '</h3>'
     ];
     register_sidebar([
-        'name'          => __('Primary', 'sage'),
+        'name'          => __('Primary', 'theme'),
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
-        'name'          => __('Footer', 'sage'),
+        'name'          => __('Footer', 'theme'),
         'id'            => 'sidebar-footer'
     ] + $config);
 });
